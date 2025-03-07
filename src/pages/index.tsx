@@ -1,22 +1,21 @@
-import { Box, Container, Stack } from "@mui/material";
+import { Stack } from "@mui/material";
 import { NextPage } from "next";
 import withLayoutMain from "../libs/layout/LayoutHome";
-
-
+import PopularProperties from "../libs/components/homepage/PopularProperties";
 
 const Home: NextPage = () => {
   return (
-    <>
-      <Container>
-        <Stack flexDirection={"column"}>
-          <Box>Popular Properties</Box>
-          <Box>Top Agents</Box>
-          <Box>Popular Properties</Box>
-          <Box>Events</Box>
+        <Stack className={"home-page"}>
+            <Stack>
+              <PopularProperties />
+            </Stack>
+            <Stack>
+              <Stack className="container">Top Agents</Stack>
+            </Stack>
+            <Stack>
+              <Stack className="container">Top Properties</Stack>
+            </Stack>
         </Stack>
-      </Container>
-    </>
   );
 };
-
-export default withLayoutMain(Home)
+export default withLayoutMain(Home);

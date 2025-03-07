@@ -1,6 +1,8 @@
 /* eslint-disable react/display-name */
 import Head from "next/head"
 import { Stack } from "@mui/material";
+import Footer from "../Footer";
+import Top from "../Top";
 
 
 const withLayoutBasic = (Component: any) => {
@@ -10,11 +12,27 @@ const withLayoutBasic = (Component: any) => {
             <title>Mohi</title>
         </Head>
         <Stack id="pc-wrap">
-    <Stack sx={{ background: "#81c784" }}>Header Besit</Stack>
-        <Stack id={"main"}>
-            <Component {...props} />
-        </Stack>
-    <Stack sx={{ background: "#a1887f" }}>Footer</Stack>
+        <Stack id={"top"}>
+                <Top />
+            </Stack>
+
+            <Stack 
+            className={`header-basic`}
+            style={{
+                backgroundImage: `url(/img/banner/properties.png)`,
+                backgroundSize: "cover",
+                boxShadow:"inset 10px 40px 150px 40px rgb(24 22 36)",
+            }}
+            >
+            </Stack>
+
+            <Stack id={"main"}>
+                <Component {...props} />
+            </Stack>
+
+            <Stack id={"footer"}>
+                <Footer />
+            </Stack>
         </Stack>
         </>
         );

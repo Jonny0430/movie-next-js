@@ -1,0 +1,120 @@
+/** IMPORTS **/
+@import '/scss/variables.scss';
+@import '/scss/pc/general.scss';
+
+@import '/scss/pc/homepage/homepage';
+
+
+body {
+	-ms-overflow-style: none; /* for Internet Explorer, Edge */
+	scrollbar-width: none; /* for Firefox */
+	overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+	display: none; /* for Chrome, Safari, and Opera */
+}
+
+#pc-wrap {
+	#top {
+		.header {
+            background-color: #1a1a1a;
+            padding: 0.5rem 0;
+          }
+          
+          .container {
+            display: flex;
+            flex-direction: column;
+          }
+          
+          .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          
+          .logo-box {
+            .logo {
+              width: 120px;
+              height: auto;
+            }
+          }
+          
+          .router-box {
+            display: flex;
+            align-items: center;
+          }
+          
+          .nav-link {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+          
+            &:hover {
+              color: #b17ff1;
+            }
+          }
+          
+          .user-box {
+            display: flex;
+            align-items: center;
+          }
+          
+          .login-user {
+            cursor: pointer;
+          }
+          
+          .user-avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+          }
+          
+          .MuiMenu-paper {
+            background-color: #1a1a1a;
+            color: white;
+          }
+        }
+    }
+
+
+    #footer {
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 2rem 0;
+          
+            .section {
+              display: flex;
+              justify-content: space-between;
+              padding: 1rem;
+          
+              &-left, &-middle, &-right {
+                flex: 1;
+              }
+          
+              .social-icons {
+                display: flex;
+                gap: 1rem;
+          
+                a {
+                  color: white;
+                  font-size: 1.5rem;
+                }
+              }
+          
+              .subscribe-button {
+                background-color: #9b4de0;
+                color: white;
+              }
+            }
+          
+            .bottom {
+              text-align: center;
+              padding-top: 1rem;
+              font-size: 0.9rem;
+            }
+          }
+        }          
