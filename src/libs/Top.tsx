@@ -20,16 +20,16 @@ const Top = () => {
               {/* Logo Section */}
               <Box sx={{ display: 'flex', alignItems: 'center' }}>
                 <img src="/img/logo/logoWhite.svg" alt="NFT Marketplace Logo" style={{ width: '120px', height: 'auto' }} />
-                <Typography variant="h6" sx={{ color: 'white', marginLeft: '10px' }}>
+                <Typography variant="h6" sx={{ color: 'white', marginLeft: '10px', fontFamily: "cursive" }}>
                   NFT Marketplace
                 </Typography>
               </Box>
     
               {/* Navigation Links */}
               <Stack direction="row" spacing={4} sx={{marginLeft: "28%"}} >
-                <Link href="/" sx={{ color: 'white', textDecoration: 'none' }}>Marketplace</Link>
-                <Link href="/property" sx={{ color: 'white', textDecoration: 'none' }}>Rankings</Link>
-                <Link href="/community" sx={{ color: 'white', textDecoration: 'none' }}>Connect a wallet</Link>
+                <Link href="/" sx={{ color: 'white', textDecoration: 'none', fontFamily: "cursive" }}>Marketplace</Link>
+                <Link href="/property" sx={{ color: 'white', textDecoration: 'none', fontFamily: "cursive" }}>Rankings</Link>
+                <Link href="/community" sx={{ color: 'white', textDecoration: 'none', fontFamily: "cursive" }}>Connect a wallet</Link>
               </Stack>
     
               {/* Sign Up Button */}
@@ -46,7 +46,7 @@ const Top = () => {
                     },
                   }}
                 >
-                  <Search sx={{ fontSize: '20px', marginRight: '8px' }} />
+                  <Search sx={{ fontSize: '20px', marginRight: '8px', fontFamily: "cursive" }} />
                   Sign Up
                 </Button>
               </Box>

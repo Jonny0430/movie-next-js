@@ -9,12 +9,6 @@ const Home: NextPage = () => {
             <Stack>
               <PopularProperties />
             </Stack>
-            <Stack>
-              <Stack className="container">Top Agents</Stack>
-            </Stack>
-            <Stack>
-              <Stack className="container">Top Properties</Stack>
-            </Stack>
         </Stack>
   );
 };

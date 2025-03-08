@@ -15,13 +15,13 @@ const Footer = () => {
           {/* Left Section */}
           <Stack className="container">
           <Box sx={{ flex: 1 }}>
-            <Typography variant="h6" sx={{ fontWeight: "bold", marginBottom: "1.5rem" }}>
+            <Typography variant="h6" sx={{ fontWeight: "bold", marginBottom: "1.5rem", fontFamily: "cursive" }}>
               NFT Marketplace
             </Typography>
-            <Typography variant="body2" sx={{ marginBottom: "1.5rem" }}>
+            <Typography variant="body2" sx={{ marginBottom: "1.5rem", fontFamily: "cursive" }}>
               NFT marketplace UI created with Anima for Figma.
             </Typography>
-            <Typography variant="body2" sx={{ marginBottom: "1.5rem" }}>
+            <Typography variant="body2" sx={{ marginBottom: "1.5rem", fontFamily: "cursive" }}>
               Join our community
             </Typography>
             <Stack direction="row" spacing={3}>
@@ -41,13 +41,13 @@ const Footer = () => {
           {/* Middle Section */}
           <Stack className="container">
           <Box sx={{ flex: 1 }}>
-            <Typography variant="h6" sx={{ fontWeight: "bold", marginBottom: "1.5rem" }}>
+            <Typography variant="h6" sx={{ fontWeight: "bold", marginBottom: "1.5rem", fontFamily: "cursive" }}>
               Explore
             </Typography>
             <Stack direction="column" spacing={3}>
-              <Link href="/" sx={{ color: "white", textDecoration: "none" }}>Marketplace</Link>
-              <Link href="/rankings" sx={{ color: "white", textDecoration: "none" }}>Rankings</Link>
-              <Link href="/connect-wallet" sx={{ color: "white", textDecoration: "none" }}>Connect a wallet</Link>
+              <Link href="/" sx={{ color: "white", textDecoration: "none", fontFamily: "cursive" }}>Marketplace</Link>
+              <Link href="/rankings" sx={{ color: "white", textDecoration: "none", fontFamily: "cursive" }}>Rankings</Link>
+              <Link href="/connect-wallet" sx={{ color: "white", textDecoration: "none", fontFamily: "cursive" }}>Connect a wallet</Link>
             </Stack>
           </Box>
           </Stack>
@@ -55,10 +55,10 @@ const Footer = () => {
           {/* Right Section */}
           <Stack className="container">
           <Box sx={{ flex: 1 }}>
-            <Typography variant="h6" sx={{ fontWeight: "bold", marginBottom: "1.5rem" }}>
+            <Typography variant="h6" sx={{ fontWeight: "bold", marginBottom: "1.5rem", fontFamily: "cursive" }}>
               Join Our Weekly Digest
             </Typography>
-            <Typography variant="body2" sx={{ marginBottom: "1.5rem" }}>
+            <Typography variant="body2" sx={{ marginBottom: "1.5rem", fontFamily: "cursive" }}>
               Get exclusive promotions & updates straight to your inbox.
             </Typography>
             <Stack direction="row" spacing={1}>
@@ -86,7 +86,7 @@ const Footer = () => {
                   padding: "12px 20px",
                   borderRadius: "8px",
                   "&:hover": {
-                    backgroundColor: "#7a3fa0",
+                    backgroundColor: "#7a3fa0", fontFamily: "cursive"
                   },
                 }}
               >
@@ -101,7 +101,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <Stack className="container">
         <Box sx={{ marginTop: "2rem", textAlign: "center", paddingTop: "1rem", marginLeft: '-80%' }}>
-          <Typography variant="body2">
+          <Typography variant="body2" sx={{ fontFamily: "cursive"}}>
             © NFT Market. Use this template freely.
           </Typography>
         </Box>
