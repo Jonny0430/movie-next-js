@@ -4,40 +4,30 @@ import { Box, Card, CardContent, CardMedia, Grid, Button, Typography, Container,
 const collections = [
   {
     id: 1,
-    image1:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5BrFG-gGzVygxRcle9Bb_xdYD0IkvkACAmg&s',
-    image: 'https://via.placeholder.com/300x200', // Image URL
-    total: '1025+',
+    image1:'https://www.visitkranj.com/wp-content/uploads/2024/09/moj-kino.jpg',
   },
   {
     id: 2,
-    image1: 'https://via.placeholder.com/300x200', // Image URL
-    image: 'https://via.placeholder.com/300x200', // Image URL
-    total: '1025+',
+    image1: 'https://www.the-berliner.com/wp-content/uploads/2022/01/kinos-scaled.jpg', // Image URL
   },
   {
     id: 3,
-    image1: 'https://via.placeholder.com/300x200',
-    image: 'https://via.placeholder.com/300x200', // Image URL
-    total: '1025+',
+    image1: 'https://bnn.de/img/11715010/xTrQBHZYtGKkSCmEOGmKEw/Langewitz?size=1920&format=jpeg&variant=LANDSCAPE_16x9',
   },
 ];
 
 const newDishes = [
     {
       id: 1,
-      image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5BrFG-gGzVygxRcle9Bb_xdYD0IkvkACAmg&s',
-      total: '1025+',
+      image:'https://www.student.si/wp-content/uploads/2023/06/red-cinema-seats-and-cola-popcorn-and-glasses-in-empty-theater-cinema-movie-theater-concept-background-3d-illustration-stockpack-istock.jpg',
     },
     {
       id: 2,
-      image: 'https://via.placeholder.com/300x200', // Image URL
-      total: '1025+',
+      image: 'https://media.istockphoto.com/id/1478374885/photo/joyful-family-watching-movie-in-cinema.jpg?s=612x612&w=0&k=20&c=U0Qp-c2vCTUPG51ZOD2H7KcrByyBKow3r9wSR2QMFZU=', // Image URL
     },
     {
       id: 3,
-      image: 'https://via.placeholder.com/300x200',
-      title: 'Desktop Card',
-      total: 'MrFox',
+      image: 'https://www.newportri.com/gcdn/authoring/2018/01/16/NNDN/ghows-PJ-ccc63fa8-8095-4cc1-ac50-41efbd7d1120-c1be348f.jpeg?width=660&height=372&fit=crop&format=pjpg&auto=webp',
     },
 ];
 
@@ -75,10 +65,19 @@ const TrendingCollections = () => {
     <Box sx={{ backgroundColor: '#1a1a1a', padding: '4rem 0' }}>
       <Stack className='container'>
         {/* Title Section */}
-        <Typography variant="h4" sx={{ color: 'white', fontWeight: 'bold', marginBottom: '1rem' }}>
+        <Typography variant="h4" sx={{ 
+            color: 'white', 
+            fontWeight: 'bold', 
+            marginBottom: '1rem', 
+            fontSize: '40px',
+            fontFamily: 'serif' }}>
           Trending Collection
         </Typography>
-        <Typography variant="h6" sx={{ color: 'white', marginBottom: '3rem' }}>
+        <Typography variant="h6" sx={{ 
+            color: 'white', 
+            marginBottom: '3rem',
+            fontSize: '20px',
+            fontFamily: 'serif' }}>
           Checkout Our Weekly Updated Trending Collection.
         </Typography>
 
@@ -107,7 +106,8 @@ const TrendingCollections = () => {
                     position: 'relative',
                     flexDirection: 'row',
                     flexWrap: 'nowrap',
-                    top: '50px'
+                    top: '50px',
+                    
                   }} key={dish.id}>
                    
                     <CardMedia
@@ -121,11 +121,19 @@ const TrendingCollections = () => {
               </Stack>
 
               {/* Dynamically display titles based on collection id */}
-              <Stack direction="row" spacing={2} sx={{ position: 'relative', top: '43px', marginLeft: 'px' }}>
+              <Stack direction="row" spacing={2} sx={{ 
+                position: 'relative', 
+                top: '43px',
+                 marginLeft: 'px' }}>
                 {newTitle
                   .filter(title => title.id === collection.id) // Filter titles based on collection id
                   .map((titles) => (
-                    <Typography variant="h6" sx={{ color: 'white', fontWeight: 'bold' }} key={titles.id}>
+                    <Typography variant="h6" sx={{ 
+                        color: 'white', 
+                        fontWeight: 'bold', 
+                        fontFamily: 'serif',
+                        fontSize: '18px'
+                         }} key={titles.id}>
                       {titles.title}
                     </Typography>
                   ))
@@ -135,7 +143,12 @@ const TrendingCollections = () => {
                 {newTotal
                   .filter(total => total.id === collection.id) // Filter titles based on collection id
                   .map((totals) => (
-                    <Typography variant="h6" sx={{ color: 'white', fontWeight: 'bold' }} key={totals.id}>
+                    <Typography variant="h6" sx={{ 
+                        color: 'white',
+                        fontWeight: 'bold', 
+                        fontFamily: 'serif',
+                        fontSize: '15px' 
+                        }} key={totals.id}>
                       {totals.total}
                     </Typography>
                   ))
