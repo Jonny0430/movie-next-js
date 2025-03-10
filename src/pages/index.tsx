@@ -4,6 +4,7 @@ import withLayoutMain from "../libs/layout/LayoutHome";
 import PopularProperties from "../libs/components/homepage/PopularProperties";
 import TrendingCollections from "../libs/components/homepage/TrendingCollaction";
 import TopCreators from "../libs/components/homepage/TopCreators";
+import BrowseCategories from "../libs/components/homepage/BrowseCategories";
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +13,7 @@ const Home: NextPage = () => {
               <PopularProperties />
               <TrendingCollections />
               <TopCreators />
+              <BrowseCategories />
             </Stack>
         </Stack>
   );
