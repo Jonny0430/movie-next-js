@@ -132,7 +132,7 @@ const TrendingCollections = () => {
                         color: 'white', 
                         fontWeight: 'bold', 
                         fontFamily: 'serif',
-                        fontSize: '18px'
+                        fontSize: '22px'
                          }} key={titles.id}>
                       {titles.title}
                     </Typography>
@@ -147,7 +147,7 @@ const TrendingCollections = () => {
                         color: 'white',
                         fontWeight: 'bold', 
                         fontFamily: 'serif',
-                        fontSize: '15px' 
+                        fontSize: '18px' 
                         }} key={totals.id}>
                       {totals.total}
                     </Typography>
