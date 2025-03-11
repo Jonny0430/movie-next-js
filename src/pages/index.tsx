@@ -5,6 +5,7 @@ import PopularProperties from "../libs/components/homepage/PopularProperties";
 import TrendingCollections from "../libs/components/homepage/TrendingCollaction";
 import TopCreators from "../libs/components/homepage/TopCreators";
 import BrowseCategories from "../libs/components/homepage/BrowseCategories";
+import DiscoverNFTS from "../libs/components/homepage/Discover";
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
               <TrendingCollections />
               <TopCreators />
               <BrowseCategories />
+              < DiscoverNFTS />
             </Stack>
         </Stack>
   );
