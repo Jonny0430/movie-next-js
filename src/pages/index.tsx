@@ -6,6 +6,7 @@ import TrendingCollections from "../libs/components/homepage/TrendingCollaction"
 import TopCreators from "../libs/components/homepage/TopCreators";
 import BrowseCategories from "../libs/components/homepage/BrowseCategories";
 import DiscoverNFTS from "../libs/components/homepage/Discover";
+import NFTCard from "../libs/components/homepage/Magic";
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
               <TopCreators />
               <BrowseCategories />
               < DiscoverNFTS />
+              <NFTCard />
             </Stack>
         </Stack>
   );
