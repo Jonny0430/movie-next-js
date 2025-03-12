@@ -21,26 +21,28 @@ const CountdownTimer = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <Box sx={{ display: 'flex', gap: '10px' }}>
-      <Box sx={{ padding: '10px', backgroundColor: '#fff', borderRadius: '4px' }}>
-        <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+    <Stack className='container'>
+    <Box sx={{ display: 'flex', gap: '20px',  marginBottom: '180px' }}>
+      <Box sx={{ padding: '10px', backgroundColor: '#ffffff54', borderRadius: '4px' }}>
+        <Typography variant="h6" sx={{ fontWeight: 'bold', color:  '#fff',  marginLeft: '12px', fontSize: '142%'}}>
           {String(timeLeft.hours).padStart(2, '0')}
         </Typography>
-        <Typography variant="body2">Hours</Typography>
+        <Typography variant="body2" sx={{ fontWeight: 'bold', color:  '#fff'}}>Hours</Typography>
       </Box>
-      <Box sx={{ padding: '10px', backgroundColor: '#fff', borderRadius: '4px' }}>
-        <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+      <Box sx={{ padding: '10px', backgroundColor: '#ffffff54', borderRadius: '4px' }}>
+        <Typography variant="h6"sx={{ fontWeight: 'bold', color:  '#fff', marginLeft: '18px' , fontSize: '142%'}}>
           {String(timeLeft.minutes).padStart(2, '0')}
         </Typography>
-        <Typography variant="body2">Minutes</Typography>
+        <Typography variant="body2" sx={{ fontWeight: 'bold', color:  '#fff' }}>Minutes</Typography>
       </Box>
-      <Box sx={{ padding: '10px', backgroundColor: '#fff', borderRadius: '4px' }}>
-        <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+      <Box sx={{ padding: '10px', backgroundColor: '#ffffff54', borderRadius: '4px'  }}>
+        <Typography variant="h6" sx={{ fontWeight: 'bold', color:  '#fff' , marginLeft: '18px' , fontSize: '142%'}}>
           {String(timeLeft.seconds).padStart(2, '0')}
         </Typography>
-        <Typography variant="body2">Seconds</Typography>
+        <Typography variant="body2" sx={{ fontWeight: 'bold', color:  '#fff'}}>Seconds</Typography>
       </Box>
     </Box>
+    </Stack>
   );
 };
 
@@ -77,7 +79,7 @@ const NFTCard = () => {
           <Typography variant="h4" component="h2" gutterBottom sx={{
               color: 'white', 
               fontWeight: 'bold', 
-              marginBottom: '-2rem', 
+              marginBottom: '1rem', 
               fontSize: '40px',
               fontFamily: 'serif',
               marginTop: '270px',
@@ -85,17 +87,33 @@ const NFTCard = () => {
               }}>
             Magic Mashrooms
           </Typography>
-         
-          <Typography variant="body1" sx={{ marginBottom: '20px' }}>
-            Auction ends in:
-          </Typography>
-          <CountdownTimer targetDate={targetDate} />
-          <Button variant="contained" sx={{ marginTop: '20px', backgroundColor: '#fff', color: '#9c27b0', borderRadius: '30px' }}>
+          <Button variant="contained" sx={{ 
+            marginTop: 'px',
+            backgroundColor: '#fff', 
+            color: '#9c27b0', 
+            borderRadius: '30px',
+            marginLeft: '-80%',
+            width: '28%',
+            height: '50px',
+            marginBottom: '8px' }}>
             See NFT
           </Button>
         </CardContent>
       </Card>
     </Box>
+    <Stack>
+    <Stack sx={{
+             width: '50%',
+              marginLeft: '69%',
+               height: '69%',
+               marginTop: '-220px'
+               }}> 
+        <Typography variant="body1" sx={{ marginBottom: '20px', marginLeft: '1%', color: '#fff' }}>
+            Auction ends in:
+        </Typography>
+          <CountdownTimer  targetDate={targetDate} />
+          </Stack>
+          </Stack>
     </Stack>
     </Stack>
   );
