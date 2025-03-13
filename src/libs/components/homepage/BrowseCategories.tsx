@@ -66,7 +66,7 @@ const BrowseCategories = () => {
                 top: '0',
                 left: '0',
                 width: '100%',
-                height: '100%',
+                height: '70%',
                 backgroundColor: 'rgba(0, 0, 0, 0.4)', // Xira rangini qo'shish
                 transition: 'opacity 0.6s ease', // Xiralikning o'zgarishini boshqarish
                 opacity: 1, // Boshlang'ichda xira
