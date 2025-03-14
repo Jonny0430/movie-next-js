@@ -3,7 +3,7 @@ import { Instagram, YouTube, Gamepad } from "@mui/icons-material";
 
 const Footer = () => {
   return (
-    <Box sx={{ backgroundColor: "#1a1a1a", color: "white", padding: "3rem 0" }}>
+    <Box sx={{ backgroundColor: "#1a1a1a", color: "white", padding: "13rem 0" }}>
       <Box
         sx={{
           width: "100%",
