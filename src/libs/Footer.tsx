@@ -3,12 +3,12 @@ import { Instagram, YouTube, Gamepad } from "@mui/icons-material";
 
 const Footer = () => {
   return (
-    <Box sx={{ backgroundColor: "#1a1a1a", color: "white", padding: "13rem 0" }}>
+    <Box sx={{ backgroundColor: "#1a1a1a", color: "white",  }}>
       <Box
         sx={{
           width: "100%",
           margin: "0 auto",
-          padding: "0 16px", // Add some padding for better alignment
+          padding: "0 16px",marginBottom: '12px' // Add some padding for better alignment
         }}
       > <Stack className="container">
         <Stack direction="row" justifyContent="space-between" spacing={6}>
