@@ -34,6 +34,7 @@ const Top = () => {
     
               {/* Sign Up Button */}
               <Box>
+                <a href="/login">
                 <Button
                   variant="contained"
                   color="primary"
@@ -49,6 +50,7 @@ const Top = () => {
                   <Search sx={{ fontSize: '20px', marginRight: '8px', fontFamily: "cursive" }} />
                   Sign Up
                 </Button>
+                </a>
               </Box>
             </Stack>
           </Stack>
