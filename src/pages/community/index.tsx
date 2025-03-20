@@ -1,3 +1,4 @@
+import Artist from "@/src/libs/components/comunitiy/Artist";
 import ConnectHome from "@/src/libs/components/comunitiy/ConnectHome";
 import Orbitians from "@/src/libs/components/comunitiy/TheOrbitians";
 import withLayoutBasic from "@/src/libs/layout/LayoutBesic";
@@ -11,6 +12,7 @@ const Rankings: NextPage = () => {
             <Stack>
                 <ConnectHome />
                 <Orbitians />
+                <Artist />
             </Stack>
          </Stack>
 )
