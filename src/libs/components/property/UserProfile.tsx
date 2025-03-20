@@ -61,9 +61,6 @@ export default function UserProfile() {
                 <NavigationIcon sx={{ mr: 1, marginLeft: '-20px' }} />
                 Navigate
             </Fab>
-            <Fab disabled aria-label="like">
-                <FavoriteIcon />
-            </Fab>
             </Box>
             </Stack>
           <Grid container spacing={1} sx={{marginLeft: '105px', marginTop: '17px'}}>
