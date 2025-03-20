@@ -1,6 +1,7 @@
 import { AppBar, Box, Button, Link, Stack, Typography } from "@mui/material";
 import { Logout, Search } from "@mui/icons-material";
 import { SetStateAction, useState } from "react";
+import CustomizedSwitches from "./components/homepage/MaterialUISwitch";
 
 const Top = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -31,9 +32,10 @@ const Top = () => {
                 <Link href="/property" sx={{ color: 'white', textDecoration: 'none', fontFamily: "cursive" }}>Rankings</Link>
                 <Link href="/community" sx={{ color: 'white', textDecoration: 'none', fontFamily: "cursive" }}>Connect a wallet</Link>
               </Stack>
-    
+              
+              <Stack sx={{marginLeft: '12%'}}><CustomizedSwitches /></Stack>
               {/* Sign Up Button */}
-              <Box>
+              <Box> 
                 <a href="/login">
                 <Button
                   variant="contained"
@@ -47,6 +49,7 @@ const Top = () => {
                     },
                   }}
                 >
+                 
                   <Search sx={{ fontSize: '20px', marginRight: '8px', fontFamily: "cursive" }} />
                   Sign Up
                 </Button>
